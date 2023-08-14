@@ -1,35 +1,15 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2021", // or newer if your node.js version supports this
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "forceConsistentCasingInFileNames": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "skipLibCheck": true,
-    "declaration": true,
-    "noFallthroughCasesInSwitch": true,
-    "composite": false,
-    "noImplicitAny": true,
-    "moduleResolution": "node",
-    "lib": ["es2021"],
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "strict": true,
-    "experimentalDecorators": true,
-    "outDir": "",
-    "rootDir": ".",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*"]
-    }
+    "incremental": true,            /* Enable incremental compilation */
+    "target": "es5",                /* Specify ECMAScript target version: */
+    "module": "commonjs",           /* 'none', 'commonjs', 'amd', 'system', etc */
+    "declaration": true,            /* Concatenate & emit output to single file.*/
+    "outDir": "",                /* Redirect output to the directory. */
+    "esModuleInterop": true,        /* Enables intero between CommonJS and ES */
+    "skipLibCheck": true,           /* Skip type checking of declaration files. */
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently */
   },
-  "exclude": ["lib","esm", "node_modules", "src/**/*.spec.ts"],
-  "include": ["src/**/*"]
+  "include": [
+    "src"
+  ]
 }
